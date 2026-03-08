@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8024074217973209165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5545ade4cda64b43969a8ea4c40de2f, type: 3}
+  m_Name: Base Card
+  m_EditorClassIdentifier: Assembly-CSharp::GameAssembly.Graphs.BaseCard
+  graph: {fileID: 11400000}
+  position: {x: -712, y: -152}
+  ports:
+    keys:
+    - card
+    - yes
+    - no
+    - cardData
+    values:
+    - _fieldName: card
+      _node: {fileID: -8024074217973209165}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: yes
+      _node: {fileID: -8024074217973209165}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: card
+        node: {fileID: 2509512251563165948}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: no
+      _node: {fileID: -8024074217973209165}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: card
+        node: {fileID: 2509512251563165948}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: cardData
+      _node: {fileID: -8024074217973209165}
+      _typeQualifiedName: GameAssembly.Cards.Data.CardsDataSO, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  card: {fileID: 0}
+  cardData: {fileID: 11400000, guid: 90aed8a432dda7d49af81a08ece26782, type: 2}
+  yes: {fileID: 0}
+  no: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27c06db780a7bf45a6c67526774684c, type: 3}
+  m_Name: CardsGraph
+  m_EditorClassIdentifier: Assembly-CSharp::GameAssembly.Graphs.CardsGraph
+  nodes:
+  - {fileID: -8024074217973209165}
+  - {fileID: 2509512251563165948}
+  - {fileID: 6035545053567174830}
+  - {fileID: 6080411099316652636}
+--- !u!114 &2509512251563165948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5545ade4cda64b43969a8ea4c40de2f, type: 3}
+  m_Name: Base Card
+  m_EditorClassIdentifier: Assembly-CSharp::GameAssembly.Graphs.BaseCard
+  graph: {fileID: 11400000}
+  position: {x: -424, y: -104}
+  ports:
+    keys:
+    - card
+    - cardData
+    - yes
+    - no
+    values:
+    - _fieldName: card
+      _node: {fileID: 2509512251563165948}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: yes
+        node: {fileID: -8024074217973209165}
+        reroutePoints: []
+      - fieldName: no
+        node: {fileID: -8024074217973209165}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: cardData
+      _node: {fileID: 2509512251563165948}
+      _typeQualifiedName: GameAssembly.Cards.Data.CardsDataSO, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: yes
+      _node: {fileID: 2509512251563165948}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: card
+        node: {fileID: 6035545053567174830}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: no
+      _node: {fileID: 2509512251563165948}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: card
+        node: {fileID: 6080411099316652636}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  card: {fileID: 0}
+  cardData: {fileID: 11400000, guid: 8469ebaa98e3b3f4fb1277a0380cb26a, type: 2}
+  yes: {fileID: 0}
+  no: {fileID: 0}
+--- !u!114 &6035545053567174830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5545ade4cda64b43969a8ea4c40de2f, type: 3}
+  m_Name: Base Card
+  m_EditorClassIdentifier: Assembly-CSharp::GameAssembly.Graphs.BaseCard
+  graph: {fileID: 11400000}
+  position: {x: -56, y: -152}
+  ports:
+    keys:
+    - card
+    - cardData
+    - yes
+    - no
+    values:
+    - _fieldName: card
+      _node: {fileID: 6035545053567174830}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: yes
+        node: {fileID: 2509512251563165948}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: cardData
+      _node: {fileID: 6035545053567174830}
+      _typeQualifiedName: GameAssembly.Cards.Data.CardsDataSO, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: yes
+      _node: {fileID: 6035545053567174830}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: no
+      _node: {fileID: 6035545053567174830}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  card: {fileID: 0}
+  cardData: {fileID: 11400000, guid: cf8405284fef2024a8995d6952e5698f, type: 2}
+  yes: {fileID: 0}
+  no: {fileID: 0}
+--- !u!114 &6080411099316652636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5545ade4cda64b43969a8ea4c40de2f, type: 3}
+  m_Name: Base Card
+  m_EditorClassIdentifier: Assembly-CSharp::GameAssembly.Graphs.BaseCard
+  graph: {fileID: 11400000}
+  position: {x: -56, y: -24}
+  ports:
+    keys:
+    - card
+    - cardData
+    - yes
+    - no
+    values:
+    - _fieldName: card
+      _node: {fileID: 6080411099316652636}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: no
+        node: {fileID: 2509512251563165948}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: cardData
+      _node: {fileID: 6080411099316652636}
+      _typeQualifiedName: GameAssembly.Cards.Data.CardsDataSO, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: yes
+      _node: {fileID: 6080411099316652636}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: no
+      _node: {fileID: 6080411099316652636}
+      _typeQualifiedName: GameAssembly.Graphs.BaseCard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  card: {fileID: 0}
+  cardData: {fileID: 11400000, guid: 474313c91c4a726489bd80ee0bfbb8b1, type: 2}
+  yes: {fileID: 0}
+  no: {fileID: 0}
